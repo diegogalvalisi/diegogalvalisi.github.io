@@ -4437,12 +4437,12 @@ ul.onovo-footer-menu li {
 
 .onovo-number .num {
   position: relative;
-  top: 7px;
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1;
-  text-shadow: 3px 3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, -3px -3px 0 #000;
+  text-shadow: 3px 3px 0 #000, -2px 3px 0 #000, 2px -2px 0 #000, -3px -3px 0 #000;
 }
+
 
 .onovo-circle-text-label {
   position: absolute;
@@ -7965,3 +7965,10 @@ body div.wpforms-container .wpforms-form button.onovo-btn[type=submit],
 }
 
 /* --options end */
+
+.onovo-services-grid-fw svg {
+  width:5rem;
+  height: auto;
+}
+
+
