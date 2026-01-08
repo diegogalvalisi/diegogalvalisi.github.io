@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-	<title>Home - Diego Galvalisi</title>
+	<title>Anii - HTML site template for audio podcasts</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,48 +12,66 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7CPoppins:400,600" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 	<link rel="stylesheet" href="assets/css/materialdesignicons.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-
+	<style id="anii-inline-style">
+		.sales-box {
+			background-image: url(tmp/sample-sales-background.jpg);
+		}
+	</style>
 </head>
-<body class="home footer-sticky">
+<body class="home footer-sticky expand-featured-media">
 	<header id="top">
 		<div class="navbar navbar-sticky">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="site-title col col-lg-auto order-first">
-						<h1><a href="index.html" class="custom-logo-link" rel="home"><img src="tmp/logo.png" class="custom-logo" width="98" height="30" alt="Anii"></a></h1>
+						<h1><a href="index.html" class="custom-logo-link" rel="home">
+								<img src="tmp/logo.png" class="custom-logo" width="98" height="30" alt="Anii"></a></h1>
 					</div>
 					<nav id="site-menu" class="col-12 col-lg order-3 order-sm-4 order-lg-2">
 						<ul>
 							<li class="menu-item menu-item-has-children current-menu-parent">
 								<a href="index.html">Home</a>
 								<a href="#" class="menu-expand"></a>
-							</li>
-							<li class="menu-item menu-item-has-children">
-								<a href="about.html">About</a>
-								<a href="#" class="menu-expand"></a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="index.html">Home</a></li>
+									<li class="menu-item current-menu-item"><a href="index-alt.html">Home - Alt</a></li>
+								</ul>
 							</li>
 							<li class="menu-item menu-item-has-children">
 								<a href="episodes.html">Episodes</a>
 								<a href="#" class="menu-expand"></a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="episodes.html">Browse Episodes</a></li>
+									<li class="menu-item"><a href="single-episode.html">Single Episode</a></li>
+								</ul>
 							</li>
-							<li class="menu-item menu-item-has-children"><a href="styleguide.html">Blog</a>
+							<li class="menu-item menu-item-has-children"><a href="styleguide.html">Features</a>
 								<a href="#" class="menu-expand"></a>
+								<ul class="sub-menu">
+									<li class="menu-item"><a href="about.html">About</a></li>
+									<li class="menu-item menu-item-has-children">
+										<a href="blog.html">Blog</a>
+										<a href="#" class="menu-expand"></a>
+										<ul class="sub-menu">
+											<li class="menu-item"><a href="blog.html">Browse Posts</a></li>
+											<li class="menu-item"><a href="single-post.html">Single Post</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="styleguide.html">Styleguide</a></li>
+									<li class="menu-item"><a href="404.html">404 - Not found</a></li>
+								</ul>
 							</li>
 							<li class="menu-item"><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
-					
 					<div class="call-to-action col-12 col-lg-auto order-5 order-xl-4">
 						<a href="#" class="button button-small button-color button-filled" target="_blank"><span class="mdi mdi-rss"></span> Subscribe</a>
-						<a href="#" class="button button-small button-color button-filled" target="_blank"><i class="fa-solid fa-piggy-bank"></i> Support Me</a>
+						<a href="#" class="button button-small button-color button-filled" target="_blank"><span class="mdi mdi-paypal"></span> Donate</a>
 					</div>
-					
 					<div class="site-menu-toggle col-auto order-2 order-sm-3">
 						<a href="#site-menu">
 							<span class="screen-reader-text">Toggle navigation</span>
@@ -66,64 +84,67 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-7 col-xl-6">
-						<h6 class="subtitle">About me</h6>
-						<h2><a href="single-episode.html">I'm a political scientist, <br /> promoting <strong>next-generation perspectives</strong> to navigate these complex times</a></h2>
-						<p>Trying to contribute to understand the present-day world, and specially, to put energies towards constructing better realities</p>
-						
-						<p><a href="about.html" class="line-link">Follow Me</a></p>
+						<h6 class="subtitle">Latest episode</h6>
+						<h2><a href="single-episode.html">Dreams of an artist and <strong>unique ideas</strong> scattered through a deserted mind</a></h2>
+						<p>This is not meant to be pleasant or polite. It is supposed to be true and unique. Yes, that's what I try every day... to be unique.</p>
+						<div id="latest-episode-player" class="podcast-episode-player" data-episode-download="https://html.liviucerchez.com/common/preview1.mp3" data-episode-download-button="Download Episode (831.6 KB)" data-episode-transcript="#" data-episode-transcript-button="View Transcript" data-episode-duration="00:41" data-episode-size="831.6 KB">
+							<audio class="wp-audio-shortcode" preload="none">
+								<source src="https://html.liviucerchez.com/common/preview1.mp3" type="audio/mpeg" />
+								<source src="https://html.liviucerchez.com/common/preview1.ogg" type="audio/ogg" />
+							</audio>
+						</div>
+						<p><a href="about.html" class="line-link">More details</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="social-navigation">
-				<a title="YouTube Channel" target="_blank" href="https://youtube.com"><i class="fab fa-youtube"></i><span class="screen-reader-text">YouTube Channel</span></a>
-				<a title="Twitch" target="_blank" href="https://twitch.tv"><i class="fab fa-twitch"></i><span class="screen-reader-text">Twitch</span></a>
-				<a title="Spotify" target="_blank" href="https://spotify.com"><i class="fab fa-spotify"></i><span class="screen-reader-text">Spotify</span></a>
-				<a title="Spotify" target="_blank" href="https://spotify.com"><i class="fab fa-telegram"></i><span class="screen-reader-text">Telegram</span></a>
-
+				<a title="Facebook Profile" target="_blank" href="https://facebook.com"><span class="screen-reader-text">Facebook Profile</span></a>
+				<a title="Google Play" target="_blank" href="https://play.google.com"><span class="screen-reader-text">Google Play</span></a>
+				<a title="YouTube Channel" target="_blank" href="https://youtube.com"><span class="screen-reader-text">YouTube Channel</span></a>
+				<a title="Spotify Mixtape" target="_blank" href="https://spotify.com"><span class="screen-reader-text">Spotify Mixtape</span></a>
+				<a title="Donate via PayPal" target="_blank" href="https://paypal.me"><span class="screen-reader-text">Donate via PayPal</span></a>
 			</div>
 			<div id="featured-media" class="featured-media">
-				<img src="tmp/sample-header1.jpg" alt="">
-			</div>
-		</div>
-		<div id="intro-description">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h6 class="subtitle">What topics I cover?</h6>
-					</div>
-					<div class="col-12 col-lg-4 feature-box">
-						<i class="fas fa-lightbulb"></i>
-						<h5 class="feature-box-title">Political theory</h5>
-						<p>Reflexive political philosophy grounded in the foundational frameworks that shape the present, and putting them in service of a positive future</p>
-					</div>
-					<div class="col-12 col-lg-4 feature-box">
-						<i class="fas fa-chess-board"></i>
-						<h5 class="feature-box-title">Geopolitics</h5>
-						<p>Multidisciplinary analyses of key global affairs, approached from a perspective committed to shared planetary peace, security, and development<p>
-					</div>
-					<div class="col-12 col-lg-4 feature-box">
-						<i class="fas fa-earth-europe"></i>
-						<h5 class="feature-box-title">Europe</h5>
-						<p>Focused coverage of both day-to-day developments and long-term trends shaping Europe, with particular attention to the European Union’s strategic direction</p>
-					</div>
-					<div class="col-12">
-						<h5 class="subtitle" style="margin-top: 1.3rem;">And much more...</h5>
-					</div>
-				</div>
+				<img src="tmp/sample-header2.jpg" alt="">
 			</div>
 		</div>
 	</header>
 
 	<main id="content">
-		
+		<div id="intro-description">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h6 class="subtitle">Want to know more?</h6>
+						<h2>Anii HTML Template</h2>
+					</div>
+					<div class="col-12 col-lg-4 feature-box">
+						<span class="mdi mdi-responsive"></span>
+						<h5 class="feature-box-title">Fully Responsive</h5>
+						<p>Was were all texts that allow this such admittance, seemed how or sisters privilege away, is with my she of is the have the couldn't odd food.</p>
+					</div>
+					<div class="col-12 col-lg-4 feature-box">
+						<span class="mdi mdi-palette"></span>
+						<h5 class="feature-box-title">Unique Look &amp; Feel</h5>
+						<p>For possible is brief. Privilege the concepts arrange last of are, state what of return good odd him, far every trial without responded dreams.</p>
+					</div>
+					<div class="col-12 col-lg-4 feature-box">
+						<span class="mdi mdi-heart"></span>
+						<h5 class="feature-box-title">Dedicated Support</h5>
+						<p>Tones, all stupid. Heard of well it quite were their tricoloured seven italic uninspired, model taking as, lay harder of the we the achievements their.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="latest-tab-container">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="tab-container">
 							<ul class="tabs">
-								<li class="active"><a href="#tab-episodes"><span class="d-none d-md-inline-block">Episodes</a></li>
+								<li class="active"><a href="#tab-episodes"><span class="d-none d-md-inline-block">Podcast</span> Episodes</a></li>
 								<li><a href="#tab-news"><span class="d-none d-md-inline-block">Blog</span> Posts</a></li>
+								<li><a href="#tab-instagram-feed"> <span class="d-none d-md-inline-block">Latest</span> From Instagram</a></li>
 							</ul>
 							<div id="tab-episodes" class="tab-content active">
 								<div class="episodes-listing">
@@ -219,7 +240,7 @@
 										</div>
 									</article>
 									<div class="pagination pagination-load-more">
-										<a href="episodes.html" class="button"><span class="mdi mdi-dots-horizontal"></span> Browse More <span class="d-none d-md-inline-block">Episodes</span></a>
+										<a href="episodes.html" class="button button-filled"><span class="mdi mdi-dots-horizontal"></span> Browse More <span class="d-none d-md-inline-block">Episodes</span></a>
 									</div>
 								</div>
 							</div>
@@ -338,7 +359,7 @@
 										</div>
 									</div>
 									<div class="pagination pagination-load-more">
-										<a href="episodes.html" class="button"><span class="mdi mdi-dots-horizontal"></span> Browse More <span class="d-none d-md-inline-block">Posts</span></a>
+										<a href="episodes.html" class="button button-filled"><span class="mdi mdi-dots-horizontal"></span> Browse More <span class="d-none d-md-inline-block">Posts</span></a>
 									</div>
 								</div>
 							</div>
@@ -382,7 +403,7 @@
 										</div>
 									</div>
 									<div class="pagination pagination-load-more">
-										<a href="https://instagram.com/" class="button"><span class="mdi mdi-instagram"></span> Follow on Instagram</a>
+										<a href="https://www.instagram.com/" class="button button-filled"><span class="mdi mdi-instagram"></span> Follow on Instagram</a>
 									</div>
 								</div>
 							</div>
@@ -402,12 +423,9 @@
 					</a>
 				</div>
 				<div class="col-12 col-md-6">
-					<h3>Join the weekly Livestream!</h3>
+					<h3>New Stuff Each Week!</h3>
 					<p>Listen below and order your copy from Amazon, iTunes or your favorite record store. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseqa untur magni dolores eos qui ratione sequi.</p>
-<p style="font-weight: bold;">
-  <img src="tmp/live.svg" alt="Live Broadcast" style="width: 1.5em; height: 1.5em; animation: beat 1s infinite;"> 
-  Broadcast Live <i class="fas fa-calendar-day" aria-hidden="true"></i> Thursdays at <i class="fas fa-clock" aria-hidden="true"></i> 19:00 (CET) on:
-</p>					<p><a href="#" style="font-size: 1.5em; margin-right: 1em;"><img src="tmp/youtube.svg" alt="YouTube" style="width: 2em; height: 2em;"></a> <a href="#" style="font-size: 1.5em;"><img src="tmp/twitch.svg" alt="Twitch" style="width: 2em; height: 2em;"></a></p>
+					<p><a href="#" class="button button-filled button-color button-small"><span class="mdi mdi-amazon"></span> Amazon</a> <a href="#" class="button button-filled button-color button-small"><span class="mdi mdi-apple"></span> iTunes</a> <a href="#" class="button button-filled button-color button-small"><span class="mdi mdi-spotify"></span> Spotify</a></p>
 				</div>
 			</div>
 		</div>
@@ -418,11 +436,11 @@
 			<div class="row">
 				<div class="widget-area col-12">
 					<section class="widget widget_text">
-						<h3 class="widget-title">Don't miss my updates!</h3>
+						<h3 class="widget-title">Don't miss our weekly episodes!</h3>
 						<div class="textwidget">
 							<form class="mc4wp-form" method="post">
 								<div class="mc4wp-form-fields">
-									<p>By subscribing to my newsletter you can get relevant information and notifications around new content</p>
+									<p>A theme with a simple and organized approach to presenting your content with understated charm and undeniable appeal.</p>
 									<p class="one-line">
 										<label class="screen-reader-text" for="subscribe_email">Subscription Email</label><input id="subscribe_email" name="email" required placeholder="Your email address&hellip;" type="email"><input value="Subscribe" type="submit">
 									</p>
@@ -454,7 +472,7 @@
 					</section>
 				</div>
 				<div class="copyright col-12">
-					<p>&copy; Made with &hearts; from Europe. All Rights Reserved. <span class="separator" role="separator" aria-hidden="true"></span> <a class="privacy-policy-link" href="#">Privacy Policy</a></p>
+					<p>&copy; Anii's Podcast was created with &hearts; in Europe. All Rights Reserved. <span class="separator" role="separator" aria-hidden="true"></span> <a class="privacy-policy-link" href="#">Privacy Policy</a></p>
 				</div>
 			</div>
 		</div>
