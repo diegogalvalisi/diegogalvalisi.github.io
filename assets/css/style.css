@@ -1330,6 +1330,12 @@ button .mdi {
 	
 }
 
+/* Ensure pages that expand the featured media keep a solid navbar background */
+.expand-featured-media #top .navbar {
+	background-color: var(--secondary-color);
+	position: relative;
+	z-index: 20;
+}
 @media (min-width: 992px) {
 	.navbar-is-sticky #top .navbar {
 		position: fixed;
@@ -1375,6 +1381,7 @@ button .mdi {
 	line-height: 1;
 	letter-spacing: -.1rem;
 }
+
 
 /* 7. Main menu */
 .site-menu-toggle,
@@ -1698,6 +1705,14 @@ button .mdi {
 #featured {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+}
+
+.expand-featured-media #featured {
+	position: relative;
+	background-color: var(--secondary-color);
+	position: relative;
+
+
 }
 
 .error404 #featured {
@@ -3008,7 +3023,7 @@ button .mdi {
 
 #footer .social-navigation a {
 	padding: 0 .5rem;
-	color: var(--body-text-color);
+	
 	transition: var(--transition-duration) color;
 }
 
